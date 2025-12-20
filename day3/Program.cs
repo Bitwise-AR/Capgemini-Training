@@ -1,4 +1,5 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 
 class day3
@@ -48,10 +49,23 @@ class day3
         // Student.GetResult(75, out result);
         // Console.WriteLine(result);
 
-        int num = 100;
-        Display.Print(in num);
 
-        int x = 50;
-        Display.Show(in x);
+        // int num = 100;
+        // Display.Print(in num);
+        // int x = 50;
+        // Display.Show(in x);
+
+        // Console.WriteLine(Params.Sum(1, 2, 3, 4, 5, 6));
+
+        // Local.Process();
+        // Local.Calculator();
+        // Local.Example();
+
+        // Console.WriteLine(Recursion.Factorial(5));
+        // Console.WriteLine(Recursion.Fibonacci(7));
+        // Console.WriteLine(Recursion.Sum(10));
+        // Console.WriteLine(Recursion.Power(2, 5));
+
+        BankAcc.Menu();
     }
 }
