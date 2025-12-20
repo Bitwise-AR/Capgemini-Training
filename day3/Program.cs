@@ -30,7 +30,28 @@ class day3
         // Parameters.Person("Muskan", 21, "Chandigarh", 'F');
         // Parameters.Person(age:24, gender:'F', city:"Gurgaon", name:"Shruti");
 
-        Array.traverse();
-        Array.letters();
+        // Array.traverse();
+        // Array.letters();
+
+        // CallBy obj = new CallBy();
+        // obj.IncByTen(ref obj.x);
+        // Console.WriteLine(obj.x);
+
+        // int q, r;   // no initialization required
+
+        // Calculator.Divide(10, 3, out q, out r);
+
+        // Console.WriteLine("Quotient = " + q);
+        // Console.WriteLine("Remainder = " + r);
+
+        // string result;
+        // Student.GetResult(75, out result);
+        // Console.WriteLine(result);
+
+        int num = 100;
+        Display.Print(in num);
+
+        int x = 50;
+        Display.Show(in x);
     }
 }
