@@ -1,4 +1,7 @@
-﻿class day3
+﻿using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
+
+class day3
 {
     public static void Main(string[] arg)
     {
@@ -18,9 +21,16 @@
         // wlt1.addMoney(11000);
         // wlt1.getBalance();
 
-        Console.WriteLine(Math.Add(178, 22));
-        Console.WriteLine(Math.Add(18, 12, 10));
-        Console.WriteLine(Math.Add(13.89, 25.65));
-        Console.WriteLine(Math.Add(13, 25.65));
+        // Console.WriteLine(Parameters.Add(178, 22));
+        // Console.WriteLine(Parameters.Add(18, 12, 10));
+        // Console.WriteLine(Parameters.Add(13.89, 25.65));
+        // Console.WriteLine(Parameters.Add(13, 25.65));
+
+        // Parameters.Person("Ayush", 21, "Phagwara");
+        // Parameters.Person("Muskan", 21, "Chandigarh", 'F');
+        // Parameters.Person(age:24, gender:'F', city:"Gurgaon", name:"Shruti");
+
+        Array.traverse();
+        Array.letters();
     }
 }
