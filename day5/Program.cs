@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using LibraryItems = LibrarySystem.Items;
+using LibraryUsers = LibrarySystem.Users;
 
 class Program
 {
     public static void Main()
     {
-        Console.WriteLine("=== TASK 1: Abstract Class & Abstract Methods ===");
+        Console.WriteLine();
         var book = new LibraryItems.Book { Title = "C# Fundamentals", Author = "John Doe", ItemID = 101 };
         var magazine = new LibraryItems.Magazine { Title = "Tech Today", Author = "Jane Doe", ItemID = 201 };
         
@@ -18,12 +19,12 @@ class Program
         Console.WriteLine($"Late Fee for 3 days: {magazine.CalculateLateFee(3)}");
         Console.WriteLine();
 
-        Console.WriteLine("=== TASK 2: Interfaces & Multiple Inheritance ===");
+        Console.WriteLine();
         ((IReservable)book).ReserveItem();
         ((INotifiable)book).SendNotification("Your reserved book is ready for pickup.");
         Console.WriteLine();
 
-        Console.WriteLine("=== TASK 3: Dynamic Polymorphism ===");
+        Console.WriteLine();
         List<LibrarySystem.Items.LibraryItem> items = new List<LibrarySystem.Items.LibraryItem> { book, magazine };
         foreach (var item in items)
         {
@@ -32,34 +33,34 @@ class Program
         }
         Console.WriteLine();
 
-        Console.WriteLine("=== TASK 4: Explicit Interface Implementation ===");
+        Console.WriteLine();
         IReservable reservableBook = book;
         INotifiable notifiableBook = book;
         reservableBook.ReserveItem();
         notifiableBook.SendNotification("Please return the book on time.");
         Console.WriteLine();
 
-        Console.WriteLine("=== TASK 5: Namespaces & Nested Namespaces ===");
+        Console.WriteLine();
         var aliasBook = new LibraryItems.Book();
         var aliasMagazine = new LibraryItems.Magazine();
         Console.WriteLine("Book and Magazine objects created using namespace alias.");
         Console.WriteLine();
 
-        Console.WriteLine("=== TASK 6: Partial & Static Classes ===");
+        Console.WriteLine();
         LibraryAnalytics.TotalBorrowedItems = 5;
         LibraryAnalytics.DisplayAnalytics();
         Console.WriteLine();
 
-        Console.WriteLine("=== TASK 7: Enumerations ===");
-        var member = new LibrarySystem.Users.Member { Name = "Alice", Role = UserRole.Member };
+        Console.WriteLine();
+        var member = new LibraryUsers.Member { Name = "Alice", Role = UserRole.Member };
         var itemStatus = ItemStatus.Borrowed;
         Console.WriteLine($"User Role: {member.Role}");
         Console.WriteLine($"Item Status: {itemStatus}");
         Console.WriteLine();
 
-        Console.WriteLine("=== BONUS TASK ===");
+        Console.WriteLine();
         member.SendRoleBasedNotification();
-        var admin = new LibrarySystem.Users.Member { Role = UserRole.Admin };
+        var admin = new LibraryUsers.Member { Role = UserRole.Admin };
         admin.SendRoleBasedNotification();
         
         var ebook = new LibraryItems.eBook { Title = "Digital C#", Author = "Tech Author", ItemID = 301 };

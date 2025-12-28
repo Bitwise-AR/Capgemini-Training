@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using LibraryItems = LibrarySystem.Items;
+using LibraryUsers = LibrarySystem.Users;
 
 // TASK 7: Enumerations
 public enum UserRole { Admin, Librarian, Member }
