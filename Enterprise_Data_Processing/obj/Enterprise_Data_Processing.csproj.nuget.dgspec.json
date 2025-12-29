@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Capgemini Training\\QuickMartTraders\\QuickMartTraders.csproj": {}
+    "D:\\Capgemini Training\\Enterprise_Data_Processing\\Enterprise_Data_Processing.csproj": {}
   },
   "projects": {
-    "D:\\Capgemini Training\\QuickMartTraders\\QuickMartTraders.csproj": {
+    "D:\\Capgemini Training\\Enterprise_Data_Processing\\Enterprise_Data_Processing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Capgemini Training\\QuickMartTraders\\QuickMartTraders.csproj",
-        "projectName": "QuickMartTraders",
-        "projectPath": "D:\\Capgemini Training\\QuickMartTraders\\QuickMartTraders.csproj",
+        "projectUniqueName": "D:\\Capgemini Training\\Enterprise_Data_Processing\\Enterprise_Data_Processing.csproj",
+        "projectName": "Enterprise_Data_Processing",
+        "projectPath": "D:\\Capgemini Training\\Enterprise_Data_Processing\\Enterprise_Data_Processing.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\Capgemini Training\\QuickMartTraders\\obj\\",
+        "outputPath": "D:\\Capgemini Training\\Enterprise_Data_Processing\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -97,7 +97,7 @@
                 case 3:
                     LastTransaction = null;
                     HasLastTransaction = false;
-                    Console.WriteLine("=========Lat Transaction Cleared========");
+                    Console.WriteLine("=========Last Transaction Cleared========");
                     break;
                 case 4:
                     Console.WriteLine("Thank you. Application closed normally.");
