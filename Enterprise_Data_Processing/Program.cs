@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 
 class Program
 {
@@ -25,6 +24,7 @@ class Program
             sum += prices[i];
         double average = (double)sum / prices.Length;
         
+        Console.WriteLine("\nTASK 1 - Dynamic Product Price Analysis:");
         Console.WriteLine($"\nAverage Price: {average:F2}");
         
         Array.Sort(prices);
