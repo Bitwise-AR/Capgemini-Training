@@ -87,14 +87,14 @@ public class Program
             };
 
             double totalBill = bill.Total();
-            Console.WriteLine($"Total Bill: ${totalBill:F2}");
+            Console.WriteLine($"Total Bill: ₹{totalBill:F2}");
 
             // Apply insurance coverage
             Console.Write("Enter Insurance Coverage Percentage: ");
             int coveragePercent = inputHelper.ReadAge(Console.ReadLine() ?? "0");
 
             double finalAmount = insuranceService.ApplyCoverage(totalBill, coveragePercent);
-            Console.WriteLine($"Final Payable Amount: ${finalAmount:F2}");
+            Console.WriteLine($"Final Payable Amount: ₹{finalAmount:F2}");
 
             Console.WriteLine($"Total Doctors in Hospital: {Doctor.TotalDoctors}");
         }
