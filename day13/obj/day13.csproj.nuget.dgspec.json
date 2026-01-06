@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Capg Training\\C# tutorials\\day12\\day12.csproj": {}
+    "D:\\Capg Training\\C# tutorials\\day13\\day13.csproj": {}
   },
   "projects": {
-    "D:\\Capg Training\\C# tutorials\\day12\\day12.csproj": {
+    "D:\\Capg Training\\C# tutorials\\day13\\day13.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Capg Training\\C# tutorials\\day12\\day12.csproj",
-        "projectName": "day12",
-        "projectPath": "D:\\Capg Training\\C# tutorials\\day12\\day12.csproj",
+        "projectUniqueName": "D:\\Capg Training\\C# tutorials\\day13\\day13.csproj",
+        "projectName": "day13",
+        "projectPath": "D:\\Capg Training\\C# tutorials\\day13\\day13.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\Capg Training\\C# tutorials\\day12\\obj\\",
+        "outputPath": "D:\\Capg Training\\C# tutorials\\day13\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
