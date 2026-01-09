@@ -1,10 +1,12 @@
 ﻿using System;
 using System.IO;
+using System.Text.Json;
+using System.Xml.Serialization;
 
-class User
+public class User
 {
-    public int Id;
-    public string Name;
+    public int Id{get; set;}
+    public string Name{get; set;}
 }
 class Program
 {
@@ -101,24 +103,44 @@ class Program
         // Console.WriteLine("File Size: " + file.Length + " bytes");
         // Console.WriteLine("Created On: " + file.CreationTime);
 
-        // How the Directory Class Is Implemented 
-        Directory.CreateDirectory("Logs");
-        if (Directory.Exists("Logs"))
+        // // How the Directory Class Is Implemented 
+        // Directory.CreateDirectory("Logs");
+        // if (Directory.Exists("Logs"))
+        // {
+        //     Console.WriteLine("Logs directory created successfully.");
+        // }
+
+        // // How the DirectoryInfo Class Is Implemented
+        // DirectoryInfo dir = new DirectoryInfo("Logs");
+
+        // if (!dir.Exists)
+        // {
+        //     dir.Create();
+        // }
+
+        // Console.WriteLine("Directory Name: " + dir.Name);
+        // Console.WriteLine("Created On: " + dir.CreationTime);
+        // Console.WriteLine("Full Path: " + dir.FullName);
+
+        // Serialization Example (Object → JSON → File)
+        // User user = new User { Id = 1, Name = "Alice" };
+        // string json = JsonSerializer.Serialize(user);
+        // File.AppendAllText("user.json", json);
+        // Console.WriteLine("User serialized successfully.");
+
+        // Deserialization Example (File → JSON → Object)
+        // string json = File.ReadAllText("user.json");
+        // User user = JsonSerializer.Deserialize<User>(json);
+        // Console.WriteLine($"User Loaded: {user.Id}, {user.Name}");
+
+        // XML serialization
+        User user = new User { Id = 1, Name = "Alice" };
+        XmlSerializer serializer = new XmlSerializer(typeof(User));
+        using (FileStream fs = new FileStream("user.xml", FileMode.Create))
         {
-            Console.WriteLine("Logs directory created successfully.");
+            serializer.Serialize(fs, user);
         }
 
-        // How the DirectoryInfo Class Is Implemented
-        DirectoryInfo dir = new DirectoryInfo("Logs");
-
-        if (!dir.Exists)
-        {
-            dir.Create();
-        }
-
-        Console.WriteLine("Directory Name: " + dir.Name);
-        Console.WriteLine("Created On: " + dir.CreationTime);
-        Console.WriteLine("Full Path: " + dir.FullName);
+        Console.WriteLine("XML Serialized");
     }
 }
-
